@@ -1,7 +1,7 @@
-let carrinho = ['Banana', 'Abobora']
+let carrinho = ['Banana', 'Abobora', 'Cachaca'];
 
-console.log(carrinho)
+console.log(carrinho);
 
-carrinho.splice(1, 1, 'Mandioca')
+carrinho.splice(carrinho.length - 1, 1, 'Mandioca');
 
-console.log(carrinho)
+console.log(carrinho);

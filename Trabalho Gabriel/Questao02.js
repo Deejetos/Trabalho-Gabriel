@@ -1,22 +1,24 @@
 let fila = ['Joao', 'Renan', 'Pyetro', 'Felipe', 'Gabriel'];
-limite = 5;
-console.log(fila)
-verificar()
+
+console.log(fila);
+
+verificar();
+
 function addFila() {
-    fila.unshift('Pedro')
+    fila.unshift('Pedro');
     console.log(fila);
 }
 
 function removeFila() {
-    fila.pop()
-    addFila()
+    fila.pop();
+    addFila();
 }
 
-function verificar(i = fila.length){
+function verificar(i = fila.length, limite = 5){
     if(i < limite){
-        addFila()
+        addFila();
     }
     else{
-        removeFila()
+        removeFila();
     }
 }

@@ -1,26 +1,18 @@
 let videosAssistidos = ['Minecraft #04', 'Minecraft #03', 'Minecraft #02', 'Minecraft #01'];
-let videosRemovidos = 0;
-let videosRecomendados = videosAssistidos;
 
-console.log(videosRecomendados);
+console.log(videosAssistidos);
 
-remove()
-remove()
-remove()
-remove()
-
-
-
-function remove() {
-    if (videosRemovidos == 2) {
-        videosRecomendados.shift();
-        videosRecomendados.push('Minecraft #05');
-        console.log(videosRecomendados);
-        videosRemovidos = 0;
+for (let i = 0; i <= 3; i++) {
+    console.log(remove(i, videosAssistidos))
+}
+function remove(indexVideosRemovidos, videosRecomendados){
+    if (indexVideosRemovidos == 2) {
+        videosRecomendados.splice(videosRecomendados.length - 1, 1, 'Minecraft #05');
+        indexVideosRemovidos = 0;
     }
     else {
         videosRecomendados.shift();
-        videosRemovidos += 1
-        console.log(videosRecomendados)
+        indexVideosRemovidos += 1;
     }
+    return videosRecomendados;
 }

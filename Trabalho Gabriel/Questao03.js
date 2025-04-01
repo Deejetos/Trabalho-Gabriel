@@ -1,9 +1,9 @@
 let pecas = ['Caburador', 'Vela', 'Pistão']
-console.log(pecas)
+console.log(pecas);
+
 estocagem();
 
 function estocagem() {
-    pecas.unshift('Freio')
-    pecas.pop()
-    console.log(pecas)
+    pecas.splice(pecas.length -1, 1, 'Freio');
+    console.log(pecas);
 }
