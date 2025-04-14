@@ -14,7 +14,7 @@ function removeFila() {
     addFila();
 }
 
-function verificar(i = fila.length, limite = 5){
+function verificar(i = fila.length, limite = 5){zzzz
     if(i < limite){
         addFila();
     }
